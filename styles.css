@@ -1,0 +1,237 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+/* -------------
+     Header
+ -------------*/
+
+.container{
+    width: 100%;
+    height: 677px;
+    background-color: #2D25A0;
+}
+.tournament{
+    display: flex;
+    width: 100%;
+    
+   
+}
+.title{
+    width: 485px;
+    height: 200px;
+    margin-left: 156px;
+    margin-top: 150px;
+
+}
+
+.header-title{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    color: #FFFFFF;
+}
+.button{
+    background-color: #E02C6D;
+    border: none;   
+    
+}
+.link-button{
+    width: 160px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 500;
+    left: 24px;
+    top: 10px;
+    bottom: 10px;
+    margin-left: 24px;
+}
+#arrow{
+    width: 16px;
+    padding-left: 8px;
+    margin-left: 8px;
+    margin-right: 24px;
+}
+.banner-image img{
+    width: 556.01px;
+    height: 438px;
+    margin-right: 140px;
+    margin-left: 102px;
+    margin-top: 153px;
+    margin-bottom: 86px;
+}
+/* hover */
+
+button:hover{
+    width:180px;
+    height: 55px;
+    background-color: chocolate;
+    transform: rotate(360deg);
+    transition: 1s ease-in-out;
+
+
+}
+.banner-image img:hover{
+    transform: rotate(90deg);
+    transition: 3s ease-in-out;
+}
+
+/*------------------
+        players
+-------------------*/
+
+.players{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap: 27px;
+    margin-right: 210px;
+    margin-left: 180px;
+    margin-top: 70px;
+    margin-bottom: 165px;
+
+    
+}
+.player{
+    width: 330px;
+    height: 474px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    margin-right: 30px;
+
+}    
+.player img{
+    width: 300px;
+    height: 256px;
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+
+}
+.player-info{
+    align-items: center;
+    width: 300px;
+    height: 154px;
+    margin-top: 16px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 33px;
+    padding-bottom: 40px;
+}
+/* extra section */
+.highlights{
+   font-size: 30px;
+   color: rgb(66, 51, 196);
+   background-color: rgb(65, 216, 216);
+   background-position: center;
+   margin: auto;
+   width: 30%;
+   border: 3px solid rgb(20, 146, 230);
+   border-radius: 10px;
+   padding: 10px;
+   text-align: center;
+
+}
+.highlights:hover{
+    background-color: violet;
+    transform: rotate(360deg);
+    transition: .5s ease-in-out;
+}
+
+.match-summary{
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-bottom: 200px;
+}
+fieldset {
+    text-align: center;
+    font-size: 50px;
+    background-color: #ebe6df;
+    border: 14px solid #001489;
+    box-shadow: 2px 3px 15px 1px lightgrey;
+    margin: 30px;
+    padding: 10px;
+    color: whitesmoke;
+    margin-bottom: 150px;
+}
+.match-box{
+    background-color:#001489;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+/*--------------
+    footer 
+--------------*/
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.social-media{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.fa-instagram-square{
+    padding-right: 14px;
+    padding-right: 14px;
+}
+.fa-futbol{
+    padding-right: 14px;
+    padding-right: 14px;
+}
+.fa-twitter-square{
+    padding-right: 14px;
+    padding-right: 14px;
+}
+.fa-youtube{
+    padding-right: 14px;
+    padding-right: 14px;
+}
+.copyright{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+    margin-bottom: 63px;
+}
+/*----------------
+    Media queries
+----------------*/
+
+/* mobile devices */
+
+@media only screen and (max-width:688px) {
+
+    .tournament{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .container{
+        width: 360px;
+        height: 695px;
+        left:0;
+        top: 0;
+        
+    }
+    .banner-image img:hover{
+        transform: none;
+    }
+
+    .banner-image, .players, .high-lights{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
